@@ -40,7 +40,7 @@ Not to worry, your changes are safe. You can navigate back to https://gitpod.io,
 
 Old, unused workspaces are automatically deleted.
 
-Unused workspaces are deleted on a schedule. There is no fixed amount of workspaces that are kept by Gitpod. To know exactly how long your past workspaces will be kept, a message is displayed at the top of the [workspaces list](https://gitpod.io/workspaces/) in your dashboard (the exact number of days may change in the future). Restarting a workspace resets the day counter for this particular workspace.
+Unused workspaces are deleted on a schedule. There is no fixed amount of workspaces that are kept by Gitpod. To know exactly how long your past workspaces will be kept, a message is displayed at the top of the [workspaces list](https://gitpod.io/workspaces/) in your dashboard. Restarting a workspace resets the day counter for this particular workspace.
 
 To prevent a workspace from being deleted, you can pin it in your [list of workspaces](https://gitpod.io/workspaces/). Pinned workspaces are kept forever.
 
