@@ -224,6 +224,15 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  ellenchisa: {
+    name: "Ellen Chisa",
+    socialProfiles: {
+      github: "ellenchisa",
+      twitter: "ellenchisa",
+      linkedin: "ellenchisa",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
