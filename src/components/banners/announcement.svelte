@@ -8,6 +8,9 @@
    * was made, in the `yyyy-mm-dd` format.
    */
   const announcementDate = "2021-10-28";
+  const startDate = new Date("2021-11-01");
+  const endDate = new Date("2021-11-30");
+  const duration = 10;
 </script>
 
 <div class="border-b border-gray-300 border-solid">
@@ -15,6 +18,9 @@
     storageKey="announcement-{announcementDate}"
     let:closeBanner
     class="announcement-banner"
+    {startDate}
+    {endDate}
+    {duration}
   >
     <span class="flex-1 text-lg text-right">🎁</span>
     <p class="flex-2 px-4 md:px-2">
