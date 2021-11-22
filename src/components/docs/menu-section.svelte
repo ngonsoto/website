@@ -3,6 +3,7 @@
   import MenuLink from "./menu-link.svelte";
 
   import type { MenuEntry } from "../../types/menu-entry.type";
+  import Pill from "./pill.svelte";
   export let menuItem: MenuEntry;
 
   $: isActiveSection = $docsCurrentSectionStore
@@ -50,6 +51,9 @@
         {#each menuItem.subMenu as sub}
           <li class="menu-item">
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
+            {#if sub.status}
+              <Pill text={sub.status} />
+            {/if}
           </li>
         {/each}
       </ul>

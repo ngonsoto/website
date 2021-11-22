@@ -1,4 +1,8 @@
-export const get: import("@sveltejs/kit").RequestHandler = ({ context }) => {
+import type { ChangelogEntry } from "../../types/changelog-entry.type";
+
+export const get: import("@sveltejs/kit").RequestHandler = async ({
+  locals,
+}) => {
   const ttlInMin = 60;
   const rssDocument = `<?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -8,15 +12,14 @@ export const get: import("@sveltejs/kit").RequestHandler = ({ context }) => {
    <link>https://www.gitpod.io/changelog</link>
    <copyright>${new Date().getFullYear()} Gitpod GmbH. All rights reserved</copyright>
    <lastBuildDate>${new Date(
-     context.changelogEntries[0].date
+     locals.changelogEntries[0].date
    ).toUTCString()}</lastBuildDate>
-   <pubDate>${new Date(
-     context.changelogEntries[0].date
-   ).toUTCString()}</pubDate>
+   <pubDate>${new Date(locals.changelogEntries[0].date).toUTCString()}</pubDate>
    <ttl>${ttlInMin}</ttl>
    <atom:link href="https://www.gitpod.io/changelog/rss.xml" rel="self" type="application/rss+xml" />
-   ${context.changelogEntries.map(
-     (entry) => `<item>
+   ${locals.changelogEntries
+     .map(
+       (entry: ChangelogEntry) => `<item>
       <title>${new Date(Date.parse(entry.date)).toLocaleDateString(undefined, {
         year: "numeric",
         month: "short",
@@ -29,7 +32,8 @@ export const get: import("@sveltejs/kit").RequestHandler = ({ context }) => {
         'src="https://www.gitpod.io/'
       )}']]></description>
     </item>`
-   )}
+     )
+     .join("")}
   </channel>
 </rss>`;
   return {

@@ -44,7 +44,7 @@
   rel="noreferrer"
 >
   <div
-    class="testimonial w-96 p-6 overflow-hidden rounded-2xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+    class="testimonial w-96 p-xx-small overflow-hidden rounded-2xl bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
   >
     <div>{@html text}</div>
     <div class="mt-4 flex">

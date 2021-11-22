@@ -23,7 +23,7 @@
 
 <Section class="text-center">
   <h2>Eligibility criteria</h2>
-  <p class="">
+  <p class="text-large">
     To qualify for Gitpod’s startup program, your company needs to:
   </p>
   <ul class="text-left max-w-sm mx-auto my-small">

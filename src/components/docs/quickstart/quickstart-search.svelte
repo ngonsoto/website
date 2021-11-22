@@ -7,10 +7,15 @@
   } from "../../../stores/quickstarts";
 </script>
 
-<QuickstartSearchinput />
-{#each $remainingQuickstarts as item}
-  <QuickstartSearchItem path={item.path} title={item.title} />
-{:else}
+<div class="mb-12">
+  <QuickstartSearchinput />
+</div>
+<div class="grid grid-cols-2 text-center md:text-left md:grid-cols-4 gap-4">
+  {#each $remainingQuickstarts as item}
+    <QuickstartSearchItem path={item.path} title={item.title} />
+  {/each}
+</div>
+{#if $remainingQuickstarts.length < 1}
   <p>
     Oh no, this quickstart does not exist yet. Please <a
       target="_blank"
@@ -20,7 +25,8 @@
   </p>
   <p>
     Also note that you are free to install any tools you need for your specific
-    use case. Please refer to the [custom docker image](/docs/config-docker)
-    documentation for more details.
+    use case. Please refer to the <a target="_blank" href="/docs/config-docker"
+      >custom docker image</a
+    > documentation for more details.
   </p>
-{/each}
+{/if}

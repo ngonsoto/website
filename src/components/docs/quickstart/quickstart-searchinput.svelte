@@ -3,7 +3,7 @@
 </script>
 
 <div class="w-full">
-  <div class="bg-white shadow-normal py-2 rounded-2xl m-4">
+  <div class="bg-white w-full shadow-normal py-2 rounded-2xl my-4">
     <div class="flex justify-items-start items-center relative">
       <label for="quickstart-searchinput" class="sr-only">Search</label>
       <img

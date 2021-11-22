@@ -15,7 +15,7 @@
 
 <Section class="text-center">
   <h2>Program Benefits</h2>
-  <p>
+  <p class="text-large">
     <a href="https://bit.ly/3liFICY" target="_blank">Apply now</a> and receive these
     unique benefits.
   </p>

@@ -7,6 +7,7 @@
   import subMenuState from "../states/sub-menu-state";
 
   import type { MenuEntry } from "../../../types/menu-entry.type";
+  import Pill from "../pill.svelte";
   export let currentSection: MenuEntry = null;
 </script>
 
@@ -107,6 +108,9 @@
         {#each currentSection?.subMenu as sub}
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
             {sub.title}
+            {#if sub.status}
+              <Pill text={sub.status} />
+            {/if}
           </MenuItem>
         {/each}
       </ul>

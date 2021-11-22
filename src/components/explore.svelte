@@ -28,6 +28,10 @@
     }
   }
 
+  .h1 {
+    @apply mb-micro;
+  }
+
   .explore__text {
     @apply px-large;
     flex: 0 0 45%;

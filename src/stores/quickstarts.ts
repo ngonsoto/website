@@ -26,7 +26,12 @@ const quickstartItems = readable(
     mapQuickstart("Elixir", "quickstart/elixir", false),
     mapQuickstart("Elm", "quickstart/elm", false),
     mapQuickstart("Flutter", "quickstart/flutter", false),
-    mapQuickstart("Golang", "quickstart/go", true, "/svg/projects/go.svg"),
+    mapQuickstart(
+      "Golang",
+      "quickstart/go",
+      true,
+      "/svg/projects/black/go-black.svg"
+    ),
     mapQuickstart("Grain", "quickstart/grain", false),
     mapQuickstart("Haskell", "quickstart/haskell", false),
     mapQuickstart("IHP", "quickstart/ihp", false),
@@ -34,17 +39,16 @@ const quickstartItems = readable(
       "Java Spring",
       "quickstart/java",
       true,
-      "/svg/projects/java.svg"
+      "/svg/projects/black/java-black.svg"
     ),
-    mapQuickstart("Jetbrains", "integrations/jetbrains", false),
     mapQuickstart("Julia", "quickstart/julia", false),
     mapQuickstart("NextJS", "quickstart/nextjs", false),
     mapQuickstart("Nix", "quickstart/nix", false),
     mapQuickstart(
-      "Node - TypeScript - Express",
+      "Node - TypeScript",
       "quickstart/typescript",
       true,
-      "/svg/projects/ts.svg"
+      "/svg/projects/black/ts-black.svg"
     ),
     mapQuickstart("OCaml", "quickstart/ocaml", false),
     mapQuickstart("Perl", "quickstart/perl", false),
@@ -54,18 +58,23 @@ const quickstartItems = readable(
       "Python Django",
       "quickstart/python",
       true,
-      "/svg/projects/python.svg"
+      "/svg/projects/black/python-black.svg"
     ),
     mapQuickstart("Python Flask", "quickstart/flask", false),
     mapQuickstart("React", "quickstart/react", false),
     mapQuickstart("Ruby on Rails", "quickstart/ruby-on-rails", false),
-    mapQuickstart("Rust", "quickstart/rust", true, "/svg/projects/rust.svg"),
+    mapQuickstart(
+      "Rust",
+      "quickstart/rust",
+      true,
+      "/svg/projects/black/rust-black.svg"
+    ),
     mapQuickstart("Scala", "quickstart/scala", false),
     mapQuickstart(
       "Svelte",
       "quickstart/svelte",
       true,
-      "/svg/projects/svelte.svg"
+      "/svg/projects/black/svelte-black.svg"
     ),
     mapQuickstart("TLA+", "quickstart/tlaplus", false),
     mapQuickstart("Wordpress", "quickstart/wordpress", false),

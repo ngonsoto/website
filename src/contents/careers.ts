@@ -292,28 +292,32 @@ export const careers: Career[] = [
     date: "2021-01-26T14:00:00.000Z",
   },
   {
-    title: "Working Student - Finance",
-    intro: `You are a "jack of all trades, master of some" student with a background in business, finance or data science and want to work 10h to 20h a week? With daily challenging tasks, we'll show you what it's like to operate a high-growth venture.`,
-    paragraphs: `We are a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We love open-source, have started and led many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.`,
+    title: "Operations Manager",
+    intro: `At Gitpod, we're building and automating cloud-based developer environments radically changing the way developers work. Join our world-class team and help create this new future.
+    We will provide you with challenging tasks, ownership and a supportive environment to nurture your growth - this is a real opportunity for you to grow in your career!`,
+    paragraphs: `Gitpod is a highly-motivated, fully-remote team which is organised in a flat hierarchy and led by our technical founders. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. The mission of the Finance & Operations team is to deliver best-in-class workflows which make the employee experience seamless, positive, and equitable and which truly enable Gitpod's growth. We're hiring a full-time position to help deliver upon our team's promise.
+    This is a dream role for someone who applies operational rigor with a people-first mentality and heart, and is excited to come in at an early stage and heavily influence the way Finance and Operations is done at Gitpod. Sound like something you’d want to be a part of? Read on!`,
     lists: [
       {
         title: "As part of the team you will ...",
         items: [
-          "Co-own strategic initiatives. Our flat hierarchy gives you the opportunity to create real value and to realise a steep learning by delegating responsibility to you and holding you accountable for deliverables. ",
-          "Learn about the financial side of a SaaS business. The adoption of SaaS will continue to grow rapidly rendering an in-depth understanding of this business model's financial workings all the more relevant. You'll learn the ins and outs of our specific business but also the operational implications of SaaS more broadly.",
-          "Contribute to our reporting. Reporting to management and investors represents a core responsibility of our team. You will participate in our continuous efforts to uphold reporting accuracy and advance our standards.",
-          "Improve daily Gitpod operations. Become part of our team's aspiration to be an internal service provider everyone loves and apply your theoretical knowledge of finance, controlling and accounting. Add automation layers to increase operational and financial efficiency where you see leverage.",
-          "Report directly to the Head of Finance & Ops. We'll make sure you'll get an appropriate learning experience by reporting directly to Gitpod's Head of Finance & Ops.",
+          "Manage operations. Become part of our team's aspiration to be an internal service provider everyone loves and manage the operations of our global team. This includes owning and managing employee contracts, benefits and workplace setup.",
+          "Scale employee life cycle processes. Create scalable people workflows (onboarding, offboarding, etc.) in a way that uses self-service, automation, and technology.",
+          "Own strategic initiatives. We frequently encounter opportunities to create significant value for Gitpod - identify and drive home any effort to capture this value.",
+          "Contribute to our reporting. Reporting to executive management and investors represents a core responsibility of our team. Contribute to our continuous efforts to create smart budgets, maintain reporting accuracy and to advance our standards.",
+          "Own systems and processes. Design and implement the business systems and processes that boost productivity and make Gitpod tick. ",
+          "Incubate new roles. We are growing rapidly with ever changing requirements from customers, employees and investors. Anticipate and respond to novel demands by incubating new roles and helping run new teams. ",
         ],
       },
       {
         title: "You will be a great fit if...",
         items: [
-          "You love numbers. From day one on, you'll compile and analyse large amounts of data and should hence be well versed in algebraic mathematics and feel comfortable around obtaining, validating and processing data - whether in statistical modelling software or spreadsheets.",
-          "You have strong written and verbal communication skills. You'll have the opportunity to present your work (analyses / models / processes) to members of the leadership team and  should hence be comfortable switching back and forth between English and German. We're building Gitpod on Notion where you'll document and showcase your achievements.",
-          "You thrive on working independently and exhibit attention for detail. You'll be encouraged to prioritise your work and to follow the 'Managers of one' principle in our quest to achieving company objectives. Additionally, you'll maintain and rigorously ensure accuracy when dealing with numbers to ensure confidence in the work created.",
-          "You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate.",
-          "Curious about automating processes. A common byproduct of our analysis work is identifying potential areas for automation - whether in expense recognition, payment processing or another area. You don't need to be an automation wizard but should be excited about leveraging software / tools to achieve higher degrees of automation.",
+          "Are eager to learn. We do not expect that you have already 'seen it all' but will provide you with opportunities to learn and grow together with us - be curious and eager.",
+          "Admire operational excellence. You are striving for operational excellence, including developing and implementing systems, processes, and capabilities to support scaling a high growth global organisation.",
+          "Pay attention to detail. You have outstanding attention to detail, notice problems and opportunities others overlook and are willing to act upon these opportunities. ",
+          "Curious about automation. To increase operational efficiency, you constantly identify potential for and execute on automation. You don't need to be a wizard in but should be excited about leveraging tools to achieve higher degrees of automation.",
+          "Embrace change. Change actually excites you and you thrive in a fast-paced environment while maintaining focus and constantly striving to add value - don't worry we're in this together.",
+          "Share our values. We aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate.",
         ],
       },
       {

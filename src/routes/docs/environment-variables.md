@@ -11,6 +11,8 @@ title: Environment Variables
 
 You can pass environment variables into your workspace and use them in your code as usual. Please refer to the documentation of your programming language of choice for details on that.
 
+`youtube: dehln1E8ylY`
+
 ## Default Environment Variables
 
 The following environment variables are set automatically by Gitpod and are guaranteed to exist:

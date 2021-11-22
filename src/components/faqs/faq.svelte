@@ -47,8 +47,6 @@
     &__top {
       padding: var(--medium);
       align-items: center;
-      width: 100%;
-      outline: none;
 
       @media (max-width: 860px) {
         padding: var(--xx-small);
@@ -114,15 +112,17 @@
 </style>
 
 <details class="faq" open={isActive} on:toggle={setActive} id={fragment}>
-  <summary class="faq__top">
-    <h3 class="h4 faq__title inline">{title}</h3>
-    <img
-      class="faq__arrow inline float-right"
-      width="24"
-      height="24"
-      src="/arrow.svg"
-      alt="Arrow"
-    />
+  <summary class="outline-none">
+    <div class="faq__top flex">
+      <h3 class="h4 faq__title flex-1">{title}</h3>
+      <img
+        class="faq__arrow ml-macro"
+        width="24"
+        height="24"
+        src="/arrow.svg"
+        alt="Arrow"
+      />
+    </div>
   </summary>
   <div class="faq__text text-large">
     <slot />

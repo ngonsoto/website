@@ -1,8 +1,14 @@
-import type { MenuEntry } from "../../types/menu-entry.type";
+import type { MenuStatus, MenuEntry } from "../../types/menu-entry.type";
 
-function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
+function M(
+  title: string,
+  path: string,
+  subMenu?: MenuEntry[],
+  status?: MenuStatus
+): MenuEntry {
   return {
     title,
+    status,
     path: "/docs" + (path ? "/" + path : ""),
     subMenu,
   };
@@ -17,7 +23,6 @@ export const MENU: MenuEntry[] = [
     M("Custom Docker Image", "config-docker"),
     M("Start Tasks", "config-start-tasks"),
     M("VS Code Extensions", "vscode-extensions"),
-    M("Editor", "configure/editor"),
     M("Exposing Ports", "config-ports"),
     M("Prebuilds", "prebuilds"),
     M("Environment Variables", "environment-variables"),
@@ -30,16 +35,27 @@ export const MENU: MenuEntry[] = [
     M("Life of a workspace", "life-of-workspace"),
     M("Contexts", "context-urls"),
     M("Collaboration & Sharing", "sharing-and-collaboration"),
-    M("Teams & Projects", "teams-and-projects"),
+    M("Teams & Projects", "teams-and-projects", [], "beta"),
     M("Create a team plan", "teams"),
-    M("Local Companion", "develop/local-companion"),
-    M("VS Code Desktop Support", "develop/vscode-desktop-support"),
+    M("Local Companion", "develop/local-companion", [], "beta"),
+  ]),
+  M("Editors", "editors", [
+    M("VS Code Browser", "editors/vscode-browser"),
+    M("GoLand", "editors/goland", [], "beta"),
+    M("IntelliJ IDEA", "editors/intellij", [], "beta"),
+    M("VS Code Desktop", "editors/vscode", [], "beta"),
+    M("CLion", "editors/clion", [], "soon"),
+    M("DataGrip", "editors/datagrip", [], "soon"),
+    M("PhpStorm", "editors/phpstorm", [], "soon"),
+    M("PyCharm", "editors/pycharm", [], "soon"),
+    M("Rider", "editors/rider", [], "soon"),
+    M("RubyMine", "editors/rubymine", [], "soon"),
+    M("WebStorm", "editors/webstorm", [], "soon"),
   ]),
   M("Integrations", "integrations", [
     M("GitLab", "gitlab-integration"),
     M("GitHub", "github-integration"),
     M("Bitbucket", "bitbucket-integration"),
-    M("JetBrains", "integrations/jetbrains"),
     M("Browser Bookmarklet", "browser-bookmarklet"),
     M("Browser Extension", "browser-extension"),
   ]),

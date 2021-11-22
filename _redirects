@@ -22,12 +22,16 @@
 /docs/43_config_ports /docs/config-ports 301
 /docs/44_config_start_tasks /docs/config-start-tasks 301
 /docs/45_checkout_location /docs/checkout-location 301
+/docs/develop/vscode-desktop-support /docs/editors/vscode 301
+/configure/editor /docs/editors/vscode 301
 /docs/45_Checkout_Location /docs/checkout-location 301
 /docs/45_Config_Go /docs/checkout-location 301
 /docs/46_prebuilds /docs/prebuilds 301
 /docs/47_environment_variables /docs/environment-variables 301
 /docs/47_Environment_Variables /docs/environment-variables 301
 /docs/50_ide /docs/ide 301
+/docs/ide /docs/editors 301
+/docs/integrations/jetbrains /docs/editors 301
 /docs/52_tips_and_tricks /docs/tips-and-tricks 301
 /docs/54_git /docs/git 301
 /docs/56_search /docs/search 301

@@ -3,7 +3,7 @@
   import { popularQuickstarts } from "../../../stores/quickstarts";
 </script>
 
-<div class="flex flex-wrap justify-center">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   {#each $popularQuickstarts as item}
     <PopularQuickstartItem
       icon={item.icon}

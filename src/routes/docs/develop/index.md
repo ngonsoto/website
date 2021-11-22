@@ -18,4 +18,4 @@ The following links describe how to develop on Gitpod and elaborate on topics br
 - [Teams & Projects](/docs/teams-and-projects)
 - [Create a team plan](/docs/teams)
 - [Local Companion](/docs/develop/local-companion)
-- [VS Code Desktop Support](/docs/develop/vscode-desktop-support)
+- [VS Code Desktop Support](/docs/editors/vscode)
