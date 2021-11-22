@@ -8,7 +8,6 @@
   export let storageKey: string;
   export let startDate: Date = new Date("2000-01-01");
   export let endDate: Date = new Date("2050-12-30");
-  export let duration: number = -1;
   export let location: "top" | "bottom" = "top";
 
   let showBanner = false;
@@ -26,9 +25,6 @@
       showBanner = !window.localStorage.getItem(storageKey);
       if (showBanner && clazz === "announcement-banner") {
         document.body.classList.add("banner-is-shown");
-        setTimeout(() => {
-          showBanner = false;
-        }, duration * 1000);
       }
     }
   });
