@@ -21,11 +21,13 @@
   };
 
   onMount(() => {
+    showBanner = !window.localStorage.getItem(storageKey);
     if (startDate < dateNow && dateNow < endDate) {
-      showBanner = !window.localStorage.getItem(storageKey);
       if (showBanner && clazz === "announcement-banner") {
         document.body.classList.add("banner-is-shown");
       }
+    } else {
+      closeBanner();
     }
   });
 </script>
