@@ -6,8 +6,8 @@
   let dateNow = new Date(Date.now());
   export { clazz as class };
   export let storageKey: string;
-  export let startDate: Date = new Date("2000-01-01");
-  export let endDate: Date = new Date("2050-12-30");
+  export let startDate: Date = new Date("2021-11-29");
+  export let endDate: Date = new Date("2021-11-30");
   export let location: "top" | "bottom" = "top";
 
   let showBanner = false;
