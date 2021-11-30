@@ -6,8 +6,8 @@
   let dateNow = new Date(Date.now());
   export { clazz as class };
   export let storageKey: string;
-  export let startDate: Date = new Date("2021-11-29");
-  export let endDate: Date = new Date("2021-11-30");
+  export let startDate: Date = new Date("2021-01-01");
+  export let endDate: Date = new Date("2021-01-02");
   export let location: "top" | "bottom" = "top";
 
   let showBanner = false;
@@ -22,12 +22,13 @@
 
   onMount(() => {
     showBanner = !window.localStorage.getItem(storageKey);
-    if (startDate < dateNow && dateNow < endDate) {
-      if (showBanner && clazz === "announcement-banner") {
+    if (clazz === "announcement-banner") {
+      let isWithinTheDates = startDate < dateNow && dateNow < endDate;
+      if (isWithinTheDates && showBanner) {
         document.body.classList.add("banner-is-shown");
+      } else if (!isWithinTheDates || !showBanner) {
+        closeBanner();
       }
-    } else {
-      closeBanner();
     }
   });
 </script>
